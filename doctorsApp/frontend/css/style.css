@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+
+
+body{
+	font-family: 'Spectral', 'Muli', serif;
+}
+
+.update_btn{
+	    padding-top: 23px !important;
+	    
+}
+
+.btn_div{
+	text-align: center;
+}
+
+.list_table{
+	    margin-top: 20px;
+}
+
+.update_row_template{
+	padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.side_one{
+	padding-right: 45px !important;
+}
+
+
+
+.side_two{
+padding-left: 45px !important;
+}
+
+th{
+	width: 110px;
+	text-align: center;
+}
+
+.sr_no, .edit, .delete {
+	width: 10px;
+}
+
+#editForm{
+	color:#3386b7;
+	background-color: rgba(195, 195, 195, 0.58);
+}
+
+.btn-warning{
+	    background-color: #f15922;
+	    margin-top: 10px;
+}
+
+.insert_form{
+	color: #3386b7 !important;
+    background-color: rgba(195, 195, 195, 0.58) !important;
+}
+
+.form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin: 0px !important;
+    padding-top: 10;
+}
+
+.btn-danger{
+	    margin-top: 10px;
+}
+
+.update_heading{
+	font-weight: 600;
+}
+.lives{
+	    padding-top: 0px !important;
+    padding-bottom: 8px;
+}
+
+.heading{
+	    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: #1e8c73;
+    padding-top: 20px;
+}
+
+.butn{
+	    text-align: center;
+    padding: 80px;
+        padding-bottom: 45px !important;
+}
+
+.half_container{
+	top:10px;
+}

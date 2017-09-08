@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>PanOrbit</title>
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+     
+       
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+    </head>
+    
+    <!-- HTML code from Bootply.com editor -->
+    
+    <body ng-app="mainApp">
+        
+        <div class="wrapper">
+    <div class="box">
+        <div class="row row-offcanvas row-offcanvas-left">
+                      
+          
+            <!-- sidebar -->
+            <div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar" role="navigation">
+              
+                <ul class="nav">
+                <li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+              </ul>
+               
+                <ul class="nav hidden-xs sidebar_margin" id="lg-menu">
+                    <li><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Featured</a></li>
+                    <li class="active"><a href="#stories"><i class="fa fa-user" aria-hidden="true"></i>PanOrbit</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-paperclip"></i> Saved</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-refresh"></i> Refresh</a></li>
+                </ul>
+               
+              
+                <!-- tiny only nav-->
+              <ul class="nav visible-xs" id="xs-menu">
+                    <li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
+                    <li><a href="#stories" class="text-center"><i class="glyphicon glyphicon-list"></i></a></li>
+                    <li><a href="#" class="text-center"><i class="glyphicon glyphicon-paperclip"></i></a></li>
+                    <li><a href="#" class="text-center"><i class="glyphicon glyphicon-refresh"></i></a></li>
+                </ul>
+              
+            </div>
+            <!-- /sidebar -->
+          
+            <!-- main right col -->
+            <div class="column col-sm-10 col-xs-11" id="main">
+                
+                <!-- top nav -->
+                <div class="navbar navbar-blue navbar-fixed-top" role="navigation">  
+                    <div class="navbar-header">
+                      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle</span>
+                        <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                      </button>
+                      <a href="#" class="navbar-brand logo">PanOrbit</a>
+                    </div>
+                    <nav class="collapse navbar-collapse" role="navigation">
+                    <form class="navbar-form navbar-left">
+                        <div class="input-group input-group-sm" style="max-width:360px;">
+                          <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                          <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                          </div>
+                        </div>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li>
+                        <img src="assets/img/panOrbit.png" class="img-responsive panOrbit_img img-circle">
+                      
+                      </li>
+                      <li>
+                       
+                        <a href="#">PanOrbit</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Home</a>
+                      </li>
+                      <li>
+                        <a href="#postModal" role="button" data-toggle="modal"><i class="glyphicon glyphicon-globe" aria-hidden="true"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-users" aria-hidden="true"></i></a>
+                      </li>
+                      <li>
+                         <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                          <li class="border_bottom"><a href="">Logout</a></li>
+                          <li class="border_bottom"><a href="">Settings</a></li>
+                          <li class="border_bottom"><a href="">Create Group</a></li>
+                          <li class="border_bottom"><a href="">New Groups</a></li>
+                          <li><a href="">Create Page</a></li>
+                        </ul>
+                      </li>
+
+
+                          
+                      </li>
+
+
+                    </ul>
+                   
+                    </nav>
+                </div>
+                <!-- /top nav -->
+              
+                <div class="padding">
+                    <div class="full col-sm-10">
+                      
+                        <!-- content -->                      
+                        <div class="row">
+                          
+                         <!-- main col left --> 
+                         <div class="col-sm-7 newsfeeds">
+                                 
+<!-- 
+                  <div class="status_box">
+                        <div>
+                            <ul class="list-inline likes">
+                              <li class="likes_deco"><i class="fa fa-pencil" aria-hidden="true" id="newsfeed_glyph"></i>Create Post</li>
+                              <li class="likes_deco"><i class="fa fa-camera-retro" aria-hidden="true" id="newsfeed_glyph"></i></i>Photo/video Album</li>
+                              <li class="likes_deco"><i class="fa fa-video-camera" id="newsfeed_glyph" aria-hidden="true"></i>Live Video</li>
+                            </ul>
+                         </div>
+                        <div class="story">
+                        <ul class="list-inline">
+                          
+                          <li><textarea id="story_box">hi</textarea></li>
+                          </ul>
+                        </div>
+                        <div>
+                          <ul class="list-inline">
+                          <li class="status_bottom_li" >Photo/Video</li>
+                          <li class="status_bottom_li">Activity</li>
+                          <li class="status_bottom_li">...</li>
+                          </ul>
+                        </div>
+
+
+                  </div> -->
+
+        
+
+
+
+
+                           <div ng-controller="app">
+                              <div class="panel panel-default newsfeed_panel newsfeed_div" ng-repeat="details in details">
+
+                              <div class="username" ng-bind="details.usename"></div>
+
+                                <div class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                </div>
+
+                                <div class="panel-thumbnail" ng-if="details.type=='img'">
+                                <img ng-src="{{details.img_src}}" class="img-responsive newsfeed_img">
+                                </div>
+                                <div class="panel-thumbnail" ng-if="details.type=='video'">
+                                    <iframe width="420" height="315"
+src="https://www.youtube.com/embed/XGSy3_Czz8k">
+</iframe>
+                            
+                                
+                                </div>
+
+                                <div>
+                                  <ul class="list-inline likes">
+                                    <li class="likes_deco"><i class="fa fa-thumbs-o-up" id="newsfeed_glyph" aria-hidden="true"></i>Like</li>
+                                    <li class="likes_deco"><i class="fa fa-commenting-o" id="newsfeed_glyph" aria-hidden="true"></i>Comment</li>
+                                    <li class="likes_deco"><i class="fa fa-share-square-o" id="newsfeed_glyph" aria-hidden="true"></i>Share</li>
+                                  </ul>
+                                </div>
+                                <div class="comment_box">
+                                  <textarea placeholder=" Write a comment....." class="comment_text"></textarea>
+                                </div>
+</div>
+                            
+                              </div>  
+
+                          </div>
+                          
+                          <!-- main col right -->
+                          <div class="col-sm-3 adds" id="adds">
+                      
+                               <div class="panel panel-default">
+                                 <div class="panel-heading gift"> <h5><i class="fa fa-gift" aria-hidden="true" id="newsfeed_glyph"></i>Mayur and others</h5></div>
+                                 
+                               </div>
+
+
+                               <div class="panel panel-default">
+                                 <div class="panel-heading" style="text-align: center;">News</div>
+                                 <div class="news_div">
+                                   <span class="news_head">Ransomware</span>
+                                   <div class="news_dec">What is the 'ransomware' WannaCry worm? All you need to know.</div>
+                                 </div>
+                                 <div class="news_div">
+                                   <span class="news_head">Ransomware</span>
+                                   <div class="news_dec">What is the 'ransomware' WannaCry worm? All you need to know.</div>
+                                 </div>
+                                 <div class="news_div" style="border:none;">
+                                   <span class="news_head">Ransomware</span>
+                                   <div class="news_dec">What is the 'ransomware' WannaCry worm? All you need to know.</div>
+                                 </div>
+
+                                 
+                               </div>
+
+
+
+                               <div class="panel panel-default">
+                               <span class="suggested">Suggested Page</span>
+                                 <div class="add">
+                                   <span class="news_head">PanOrbit</span>
+                                   <div><img src="assets/img/panOrbit.png" class="add_img"></div>
+                                 </div>
+                                 
+                               </div>
+                            
+                          </div>
+
+
+
+                       </div><!--/row-->
+                  
+                        
+                      
+                    </div><!-- /col-9 -->
+
+                             
+                             <div class="chat-noti column col-sm-2 col-xs-1 sidebar-offcanvas right_sidebar" id="sidebar" role="navigation" >
+                                 
+                                 <div id="div1" style="background-color: #e9eaed;">
+                                   <ul class="rightUp_list">
+                                     <li class="note_list">Mayur Likes A photo</li>
+                                     <li class="note_list">Mayur shares A photo</li>
+                                     <li class="note_list">PanOrbit Likes A photo</li>
+                                     <li class="note_list">PanOrbit Shares A photo</li>
+                                     <li class="note_list">James become Freind With Rock</li>
+                                     <li class="note_list">Sanjeev Celebriting 5 years of Freindship with Manoj</li>
+                                     <li class="note_list">Mayur Likes A photo</li>
+                                     <li class="note_list">Mayur shares A photo</li>
+                                     <li class="note_list">PanOrbit Likes A photo</li>
+                                     <li class="note_list">PanOrbit Shares A photo</li>
+                                    <li class="note_list">James is Freinds With Rock</li>
+                                     <li class="note_list">Sanjeev Celebriting 5 years of Freindship with Manoj</li>
+                                     <li class="note_list">Sanjeev Celebriting 5 years of Freindship with Manoj</li>
+                                     <li class="note_list">Mayur Likes A photo</li>
+                                     <li class="note_list">Mayur shares A photo</li>
+                                     <li class="note_list">PanOrbit Likes A photo</li>
+                                     <li class="note_list">PanOrbit Shares A photo</li>
+                                    <li class="note_list">James is Freinds With Rock</li>
+                                     <li class="note_list">Sanjeev Celebriting 5 years of Freindship with Manoj</li>
+                                     <li class="note_list">Sanjeev Celebriting 5 years of Freindship with Manoj</li>
+                                     <li class="note_list">Mayur Likes A photo</li>
+                                     <li class="note_list">Mayur shares A photo</li>
+                                     <li class="note_list">PanOrbit Likes A photo</li>
+                                     <li class="note_list">PanOrbit Shares A photo</li>
+                                    <li class="note_list">James is Freinds With Rock</li>
+                                     <li class="note_list">Sanjeev Celebriting 5 years of Freindship with Manoj</li>
+                                     <li class="note_list">Sanjeev Celebriting 5 years of Freindship with Manoj</li>
+                                     <li class="note_list">Mayur Likes A photo</li>
+                                     <li class="note_list">Mayur shares A photo</li>
+                                     <li class="note_list">PanOrbit Likes A photo</li>
+                                     <li class="note_list">PanOrbit Shares A photo</li>
+                                    <li class="note_list">James is Freinds With Rock</li>
+                                     <li class="note_list">Sanjeev Celebriting 5 years of Freindship with Manoj</li>
+                                     <li class="note_list">Sanjeev Celebriting 5 years of Freindship with Manoj</li>
+                                     <li class="note_list">Mayur Likes A photo</li>
+                                     <li class="note_list">Mayur shares A photo</li>
+                                     <li class="note_list">PanOrbit Likes A photo</li>
+                                     <li class="note_list">PanOrbit Shares A photo</li>
+                                    <li class="note_list">James is Freinds With Rock</li>
+                                     <li class="note_list">Sanjeev Celebriting 5 years of Freindship with Manoj</li>
+                                   
+                                   </ul>
+                                 </div>
+
+                                 <div id="div2">
+
+                                  <ul class="rightUp_list" id="mylist">
+                                     <li class="note_list">Mayur</li>
+                                     <li class="note_list">PanOrbit</li>
+                                     <li class="note_list">James</li>
+                                     <li class="note_list">Mark</li>
+                                     <li class="note_list">Bill</li>
+                                     <li class="note_list">Manoj</li>
+                                     <li class="note_list">Mayur Patil</li>
+                                     <li class="note_list">Ketan</li>
+                                     <li class="note_list">Jessica</li>
+                                     <li class="note_list">Rahul</li>
+                                    <li class="note_list">Atish</li>
+                                     <li class="note_list">Sanjeev</li>
+                                   
+                                   </ul>
+                                   
+                                 </div>
+
+
+
+
+                </div><!-- /padding -->
+            </div>
+            <!-- /main -->
+          
+        </div>
+    </div>
+</div>
+
+
+<!--post modal-->
+<div id="postModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      Update Status
+      </div>
+      <div class="modal-body">
+          <form class="form center-block">
+            <div class="form-group">
+              <textarea class="form-control input-lg" autofocus="" placeholder="What do you want to share?"></textarea>
+            </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+          <div>
+          <button class="btn btn-primary btn-sm" data-dismiss="modal" aria-hidden="true">Post</button>
+            <ul class="pull-left list-inline"><li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li><li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li><li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li></ul>
+      </div>  
+      </div>
+  </div>
+  </div>
+</div>
+        
+        <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+
+
+        <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script>
+var windw = this;
+
+$.fn.followTo = function ( pos ) {
+    var $this = this,
+        $window = $(window);
+    
+    $window.scroll(function(e){
+        if ($window.scrollTop() > pos) {
+          
+             $this.css({
+                position: 'fixed',
+                top: 0
+            });
+        } else {
+            $this.css({
+                position: 'absolute',
+                top: pos
+            });
+           
+        }
+    });
+};
+
+$('#adds').followTo(25);
+
+</script>
+
+  
+        
+        
+    </body>
+</html>

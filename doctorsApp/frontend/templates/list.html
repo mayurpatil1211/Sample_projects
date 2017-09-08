@@ -1,0 +1,33 @@
+	<div id="list">
+
+	<span class="input-group-btn">
+		<input type="text" class="form-control" id="date" placeholder="Search Todays Appointment" ng-model="today">
+	</span>
+	<div></div>
+
+	<div class="table-responsive list_table">
+							<table class="table table-hover table-striped table-bordered">
+							<tr>
+							<th class="sr_no">Sr.No</th>
+							<th>Name</th>
+							<th>Phone</th>
+							<th>Time-Slot</th>
+							<th>Date</th>
+							</tr>
+							<tr ng-repeat="detail in details| filter:today">
+							<td>
+							<span>{{detail.id}}</span></td>
+							<td>{{detail.name}}</td>
+							<td>{{detail.phone}}</td>
+							<td>{{detail.time_slot}}</td>
+							<td>{{detail.a_date | limitTo:16}}</td>
+							</tr>
+							</table>
+	</div>
+	</div>
+
+	<script>
+	$( document ).ready(function() {
+		     $('#list').css('display', 'none');
+		});
+	</script>

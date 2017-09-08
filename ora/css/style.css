@@ -1,0 +1,150 @@
+ul {
+    list-style-type: none;
+}
+body {
+    background-color: #616161;
+}
+.post-heading {
+    font-size: 36px;
+    font-weight: 600;
+    color: #ee5920;
+}
+.logo {
+    padding: 23px 0 0 29px;
+}
+.job_page {
+    background-color: white;
+    margin-top: 77px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 25px;
+    box-shadow: 0px 0px 4px #888888;
+    padding-bottom: 28px;
+    margin-bottom: 60px;
+    margin-right: 50px;
+    margin-left: 50px;
+    s
+}
+.row {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.btn-post {
+    margin-left: 20px;
+}
+.space-in-form {
+    margin-bottom: 29px
+}
+textarea.form-control.form-group.description {
+    height: 160px;
+}
+.filter-result:hover {
+    border: 1px solid #3668d1;
+}
+.filter-result {
+    background: #fff;
+    padding: 40px 0;
+    float: left;
+    width: 100%;
+    box-shadow: 0px 1px 2px 0px #e4e4e4;
+    -moz-box-shadow: 0px 1px 2px 0px #e4e4e4;
+    -webkit-box-shadow: 0px 1px 2px 0px #e4e4e4;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+}
+body.job-list {
+    background: #616161 !important;
+}
+.container.list {
+    padding-top: 93px;
+}
+
+p.job-heading {
+    font-size: 30px;
+}
+.col-md-2.location,
+.col-md-2.job_type {
+    padding: 22px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+button.btn.btn-primary {
+    /*float: right;*/
+    /* padding: 20px 10px; */
+    
+    border: none;
+    margin: 19px 10px;
+    text-align: center;
+}
+.view {
+    text-align: center;
+}
+.company-name {
+    font-size: 20px;
+}
+.job_view_section {
+    margin-top: 50px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.job_headline {
+    color: #df5e0e;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: ubuntu;
+}
+.details {
+    font-size: 16px;
+    color: #337ab7;
+    font-weight: 400;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+}
+.job_description {
+    padding: 20px;
+    font-size: 17px;
+}
+.posted_date {
+    float: right;
+    font-size: 15px;
+}
+.job_view {
+    color: #ffffff;
+}
+.job_view:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+#job {
+    float: right !important;
+    margin-top: ;
+}
+.err {
+    color: red;
+    font-style: italic;
+}
+.welcome {
+    text-align: center;
+    color: #ef5a21;
+    font-weight: 500;
+    font-size: 55px;
+    font-family: ubuntu;
+}
+.welcome_block {
+    top: 95px;
+}
+.wel_button {
+    top: 110px;
+    text-align: center;
+}
+
+.table-data{
+    margin-top: 10px;
+}
+
+.list-button{
+       margin: 0px;
+
+}

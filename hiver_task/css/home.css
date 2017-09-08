@@ -1,0 +1,428 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600|Ubuntu:400,700);
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0
+}
+.container,
+.marAuto {
+    margin: 0 auto
+}
+body {
+    min-height: 100vh
+}
+.container {
+    max-width: 1200px
+}
+@media (min-width: 960px) and (max-width: 1200px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+}
+a {
+    cursor: pointer;
+    text-decoration: none
+}
+a:hover {
+    color: #000
+}
+.hero,
+header {
+    background-color: #1cb395;
+    color: #fff
+}
+header .container {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px
+}
+.form label,
+header .container,
+header .phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-align: center
+}
+@media (max-width: 480px) {
+    html {
+        font-size: 14px
+    }
+    .container {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    header img.logo {
+        width: 100px
+    }
+}
+header .phone {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font: 600 1.24rem/4 "Open Sans", sans-serif
+}
+header .phone img {
+    margin-right: 10px
+}
+@media (max-width: 480px) {
+    header .phone {
+        font-size: 1rem
+    }
+    header .phone img {
+        width: 20px
+    }
+}
+.hero .container {
+    position: relative
+}
+h1 {
+    font: 400 3.5rem/1.2 Ubuntu, sans-serif;
+    letter-spacing: 1px
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem
+    }
+}
+h2 {
+    font: 400 1.4rem/1.6 "Open Sans", sans-serif;
+    letter-spacing: .2px;
+    padding-bottom: 30px
+}
+.form {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+.form form {
+    background-color: #fff;
+    width: 410px;
+    padding: 15px 15px 24px;
+    -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, .07);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .07);
+    border-radius: .313rem;
+    border: 1px solid #dcdcdc
+}
+@media (max-width: 480px) {
+    h2 {
+        font-size: .9rem
+    }
+    .form form {
+        width: 300px;
+        margin: 0 auto
+    }
+}
+.form input,
+.form label {
+    display: block;
+    width: 100%
+}
+.form label {
+    margin-bottom: 6px;
+    color: #a5a5a5;
+    font: 400 1rem/1.375rem "Open Sans", sans-serif;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+.main .testimonial,
+.main .words {
+    display: -webkit-box;
+    display: -ms-flexbox
+}
+.form label img {
+    margin-right: 10px
+}
+.form .control {
+    margin-bottom: 13px
+}
+.form input,
+.form input[type=submit] {
+    border-radius: .25rem;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+.form input[type=submit] {
+    outline: 0;
+    border: 0;
+    -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, .05);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .05);
+    font: 700 1rem/1.25 Ubuntu, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 0;
+    background-color: #ff6200;
+    height: 41px;
+    color: #fff
+}
+.form input[type=submit]:hover {
+    background-color: #e65800
+}
+.form input {
+    height: 38px;
+    border: .063rem solid #e5e5e5;
+    background-color: #fafafa;
+    padding: 0 20px;
+    font-size: 1rem;
+    color: #707070
+}
+.clients,
+.main {
+    background-color: #f9f9f9
+}
+.form input:focus {
+    outline: 0;
+    border-color: #1cb395
+}
+.termsAndCondition {
+    color: #a5a5a5;
+    font: 400 .69rem/2.313 "Open Sans", sans-serif;
+    padding: 8px 0
+}
+.main {
+    padding: 60px 0
+}
+@media (max-width: 480px) {
+    .termsAndCondition {
+        color: #fff
+    }
+    .main {
+        padding: 20px 10px
+    }
+}
+.main .testimonial {
+    max-width: 720px;
+    position: relative;
+    padding: 6px 0 0 45px;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+.main .testimonial img.face {
+    margin-right: 35px
+}
+@media (max-width: 480px) {
+    .main .testimonial {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 0
+    }
+    .main .testimonial img.face {
+        margin-right: 0;
+        margin-bottom: 20px
+    }
+}
+.main .words {
+    height: 83px;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around
+}
+.clients .container,
+.features,
+footer .container,
+footer .left {
+    display: -webkit-box;
+    display: -ms-flexbox
+}
+.main blockquote {
+    color: #807f7f;
+    font: italic 300 1rem/1.375rem "Open Sans", sans-serif
+}
+.main .quoteBy {
+    color: #414141;
+    font: 400 .75rem/1.88rem "Open Sans", sans-serif
+}
+.main .quote {
+    position: absolute
+}
+.main .open {
+    top: 0;
+    left: 0
+}
+.main .close {
+    right: 0;
+    bottom: 0;
+    -webkit-transform: rotateY(180deg) rotateX(180deg);
+    transform: rotateY(180deg) rotateX(180deg)
+}
+.features {
+    width: 100%;
+    padding: 40px 45px 70px;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+@media (max-width: 480px) {
+    .features {
+        padding: 20px 0 0
+    }
+}
+.feature {
+    width: 25%;
+    text-align: center;
+    padding: 0 5px
+}
+.feature p {
+    color: #696969;
+    font: 300 .813rem/1.188rem "Open Sans", sans-serif;
+    padding: 0 2.4rem
+}
+.feature h3 {
+    color: #6c6c6c;
+    font: 600 .9rem/1.88rem "Open Sans", sans-serif;
+    text-transform: uppercase;
+    margin: 25px 0 8px
+}
+@media (max-width: 480px) {
+    .feature {
+        width: 100%;
+        margin-bottom: 40px
+    }
+}
+@media (min-width: 480px) and (max-width: 960px) {
+    .feature {
+        width: 50%;
+        margin-bottom: 20px
+    }
+}
+.clients img {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1)
+}
+.clients .container {
+    -webkit-box-align: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 32px 0
+}
+footer .container,
+footer .left {
+    -webkit-box-align: center
+}
+@media (max-width: 480px) {
+    .clients .container {
+        padding: 20px
+    }
+    .clients img {
+        width: 120px;
+        margin-bottom: 40px
+    }
+}
+@media (min-width: 480px) and (max-width: 960px) {
+    .clients img {
+        width: 150px;
+        margin: 30px
+    }
+}
+@media (min-width: 960px) and (max-width: 1200px) {
+    .clients img {
+        margin: 10px
+    }
+}
+footer {
+    background-color: #fff;
+    padding: 9px 0
+}
+.clients .container,
+footer .container,
+footer .left,
+footer ul {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+footer a,
+footer li,
+footer p {
+    color: #797979;
+    font: 400 .688rem/2.313rem Ubuntu, sans-serif
+}
+footer .left,
+footer ul {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+footer img {
+    margin-right: 30px
+}
+footer ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-align: center
+}
+footer ul li {
+    margin-right: 14px
+}
+@media screen and (max-width: 1200px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    .form {
+        position: static
+    }
+    .form form {
+        margin: 0 auto
+    }
+    .main .testimonial {
+        max-width: none
+    }
+    .hero .container {
+        text-align: center
+    }
+}
+@media screen and (max-width: 960px) {
+    footer .container,
+    footer .left,
+    footer ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+    footer img,
+    footer ul li {
+        margin-right: 0
+    }
+    footer li {
+        font-size: 1rem
+    }
+    footer li:first-child {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2
+    }
+    footer .divider {
+        display: none
+    }
+}

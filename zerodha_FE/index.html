@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset='UTF-8'>
+<!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
+
+<link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+
+<div class="mainDiv">
+  <div class="mainDiv_container">
+    <ul class="mainDiv_container_text">
+      <li class="mainDiv_container_text__item">That's one small step for a man, one giant leap for mankind - Neil Armstrong</li>
+      <li class="mainDiv_container_text__item">The Universe is under no obligation to make sense to you - Neil deGrasse Tyson</li>
+      <li class="mainDiv_container_text__item">I would like to die on Mars. Just not on impact - Elon Musk</li>
+      <li class="mainDiv_container_text__item">If we can conquer space, we can conquer childhood hunger - Buzz Aldrin</li>
+      <li class="mainDiv_container_text__item">The eternal silence of these infinite spaces frightens me - Blaise Pascal</li>
+    </ul>
+  </div>
+</div>
+<div>
+<ul id="zerodha_task">
+  <li v-for="item in items">
+    {{ item }}
+  </li>
+</ul>
+</div>
+
+<script src="static/js/vue.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.js"></script> -->
+<script>
+var zerodha = new Vue({
+  el: '#zerodha_task',
+  data: {
+    items: [
+    "That\'s one small step for a man, one giant leap for mankind - Neil Armstrong",
+    "That\'s one small step for a man, one giant leap for mankind - Neil Armstrong",
+    "That\'s one small step for a man, one giant leap for mankind - Neil Armstrong",
+    "That\'s one small step for a man, one giant leap for mankind - Neil Armstrong",
+    "That\'s one small step for a man, one giant leap for mankind - Neil Armstrong"
+    ]
+  }
+})
+</script>
+</body>
+</html>
